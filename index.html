@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>60-Day Amazon Seller Account Optimization & Team Scaling Case Study</title>
+    <!-- Modern Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Main Workspace Layout -->
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-icon">
+                    <i data-lucide="trending-up"></i>
+                </div>
+                <div class="brand-text">
+                    <h2>Saurabh AI</h2>
+                    <p>MarketOps Solutions</p>
+                </div>
+            </div>
+            
+            <div class="sidebar-user">
+                <div class="user-avatar">SV</div>
+                <div class="user-info">
+                    <h4>Saurabh Varma</h4>
+                    <p>E-commerce PM Lead</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-label">Core Project</div>
+                <a href="#" class="nav-link active" data-target="slide-deck-section" id="nav-slides">
+                    <i data-lucide="presentation"></i>
+                    <span>Case Study Slides</span>
+                </a>
+                <a href="#" class="nav-link" data-target="dashboard-section" id="nav-dashboard">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Seller Central Live</span>
+                </a>
+                
+                <div class="nav-label">Management Hub</div>
+                <a href="#" class="nav-link" data-target="jira-section" id="nav-jira">
+                    <i data-lucide="kanban-square"></i>
+                    <span>Jira Sprint Board</span>
+                </a>
+                <a href="#" class="nav-link" data-target="risk-section" id="nav-risk">
+                    <i data-lucide="alert-triangle"></i>
+                    <span>Risk Register</span>
+                </a>
+                
+                <div class="nav-label">Resources & Assets</div>
+                <a href="#" class="nav-link" data-target="ai-sop-section" id="nav-ai-sop">
+                    <i data-lucide="cpu"></i>
+                    <span>AI SOP & Outreach</span>
+                </a>
+                <a href="#" class="nav-link" data-target="org-chart-section" id="nav-org">
+                    <i data-lucide="users"></i>
+                    <span>Hiring & Team Chart</span>
+                </a>
+                <a href="#" class="nav-link" data-target="excel-section" id="nav-excel">
+                    <i data-lucide="file-spreadsheet"></i>
+                    <span>Excel Data Center</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="https://www.linkedin.com/in/saurabh-varma-997312404/" target="_blank" class="linkedin-btn" id="linkedin-link">
+                    <i data-lucide="linkedin"></i>
+                    <span>Connect on LinkedIn</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-title-area">
+                    <span class="badge badge-accent">Interactive Case Study Portfolio</span>
+                    <h1 id="main-title">60-Day Amazon Seller Account Optimization & Team Scaling Project</h1>
+                </div>
+                <div class="header-actions">
+                    <div class="metric-mini">
+                        <span class="metric-mini-label">Fulfillment Delay SLA</span>
+                        <span class="metric-mini-value warning-text"><i data-lucide="clock"></i> 24h Response</span>
+                    </div>
+                    <div class="metric-mini">
+                        <span class="metric-mini-label">Amazon Marketplace</span>
+                        <span class="metric-mini-value accent-text"><i data-lucide="globe"></i> India & Saudi Arabia</span>
+                    </div>
+                    <a href="https://www.linkedin.com/in/saurabh-varma-997312404/" target="_blank" class="btn btn-primary btn-sm" style="background: #0077b5; border: none; height: 38px; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                        <i data-lucide="linkedin" style="width: 16px; height: 16px;"></i>
+                        <span>Contact Saurabh Varma</span>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Dynamic View Containers -->
+            <div class="content-body">
+                
+                <!-- 1. CASE STUDY SLIDESHOW VIEW -->
+                <section id="slide-deck-section" class="tab-content active">
+                    <div class="slideshow-container">
+                        <!-- Slide Controls -->
+                        <div class="slideshow-header">
+                            <div class="slide-indicator">
+                                <span class="current-slide">01</span> <span class="total-slides">/ 12</span>
+                                <h3 id="slide-title">Loading Slide...</h3>
+                            </div>
+                            <div class="slide-controls">
+                                <button class="btn btn-secondary btn-icon" id="prev-slide-btn"><i data-lucide="chevron-left"></i></button>
+                                <button class="btn btn-primary" id="next-slide-btn">Next Slide <i data-lucide="chevron-right"></i></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide Workspace Grid -->
+                        <div class="slide-workspace-grid">
+                            <!-- Left: Insights and Data (Analysis Panel) -->
+                            <div class="slide-analysis-panel">
+                                <div class="slide-meta">
+                                    <span class="badge" id="slide-section-tag">Learning Background</span>
+                                </div>
+                                <div class="slide-narrative" id="slide-content-text">
+                                    <!-- Dynamic text content -->
+                                </div>
+                                <div class="slide-stats-box" id="slide-stats-container">
+                                    <!-- Dynamic metric pills -->
+                                </div>
+                                <div class="slide-action-box" id="slide-actions-container">
+                                    <!-- Dynamic action plans -->
+                                </div>
+                            </div>
+                            
+                            <!-- Right: Visual Proof & Interactive Mockup Panel -->
+                            <div class="slide-visual-panel">
+                                <div class="visual-card">
+                                    <div class="visual-card-header">
+                                        <div class="visual-title">
+                                            <i data-lucide="image"></i>
+                                            <span id="visual-header-text">Seller Central Verified Screenshot</span>
+                                        </div>
+                                        <div class="visual-actions">
+                                            <span class="badge badge-success" id="visual-proof-badge"><i data-lucide="shield-check"></i> Account Data Verified</span>
+                                        </div>
+                                    </div>
+                                    <div class="visual-card-body" id="visual-media-container">
+                                        <!-- Dynamic Image or Live UI components will load here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. INTERACTIVE SELLER CENTRAL DASHBOARD VIEW -->
+                <section id="dashboard-section" class="tab-content">
+                    <div class="dashboard-wrapper">
+                        <!-- Simulated Amazon Seller Central Header -->
+                        <div class="sc-header">
+                            <div class="sc-logo-area">
+                                <i data-lucide="menu" class="sc-menu-btn"></i>
+                                <span class="sc-logo-amazon">amazon</span>
+                                <span class="sc-logo-seller">seller central</span>
+                                <span class="sc-logo-country">India</span>
+                            </div>
+                            <div class="sc-store-select">
+                                <div class="store-blur-box">
+                                    <span class="blurred-text-lg">SHABA BAGS</span>
+                                </div>
+                                <span class="badge badge-sc-country">India</span>
+                            </div>
+                            <div class="sc-nav-right">
+                                <i data-lucide="search"></i>
+                                <i data-lucide="bell"></i>
+                                <i data-lucide="settings"></i>
+                                <div class="sc-user-profile">
+                                    <span class="user-blur-circle">G</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- SC Inner Sub-Navbar -->
+                        <div class="sc-sub-nav">
+                            <a href="#" class="sc-sub-link active" data-sc-sub="sc-home">Home Dashboard</a>
+                            <a href="#" class="sc-sub-link" data-sc-sub="sc-sales">Sales Performance</a>
+                            <a href="#" class="sc-sub-link" data-sc-sub="sc-inventory">Inventory Listing Audit</a>
+                            <a href="#" class="sc-sub-link" data-sc-sub="sc-ads">PPC Ads Campaign</a>
+                            <a href="#" class="sc-sub-link" data-sc-sub="sc-global">Marketplace Comparison</a>
+                        </div>
+                        
+                        <!-- SC Sub Tabs Contents -->
+                        <div class="sc-content-area">
+                            
+                            <!-- Sub Tab A: SC Home Dashboard -->
+                            <div id="sc-home" class="sc-sub-content active">
+                                <div class="sc-banner-health">
+                                    <span>Good afternoon, your account health is <span class="badge-health-green"><i data-lucide="check-circle-2"></i> Healthy</span></span>
+                                    <a href="#" class="sc-tour-btn">Launch Tour</a>
+                                </div>
+                                
+                                <div class="sc-home-grid">
+                                    <!-- Left column: Quick Actions Card -->
+                                    <div class="sc-card actions-card">
+                                        <div class="sc-card-header">
+                                            <h3>Actions</h3>
+                                            <span class="action-count-badge">3</span>
+                                        </div>
+                                        <div class="sc-card-body">
+                                            <div class="sc-action-item warning-border">
+                                                <div class="action-icon warning-text"><i data-lucide="truck"></i></div>
+                                                <div class="action-info">
+                                                    <h4>Ship orders</h4>
+                                                    <p class="warning-text">139 FBM orders to confirm or ship</p>
+                                                </div>
+                                                <i data-lucide="more-vertical" class="action-menu-dots"></i>
+                                            </div>
+                                            <div class="sc-action-item danger-border">
+                                                <div class="action-icon danger-text"><i data-lucide="message-square"></i></div>
+                                                <div class="action-info">
+                                                    <h4>Buyer Messages</h4>
+                                                    <p class="danger-text">2 Over 24 hours target / 0 Under</p>
+                                                </div>
+                                                <i data-lucide="more-vertical" class="action-menu-dots"></i>
+                                            </div>
+                                            <div class="sc-action-item warning-border">
+                                                <div class="action-icon warning-text"><i data-lucide="refresh-cw"></i></div>
+                                                <div class="action-info">
+                                                    <h4>Review open returns</h4>
+                                                    <p class="warning-text">25 requests pending review</p>
+                                                </div>
+                                                <i data-lucide="more-vertical" class="action-menu-dots"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Right column: Global Snapshot Cards Grid -->
+                                    <div class="sc-global-snapshot-area">
+                                        <div class="sc-snapshot-header">
+                                            <h3>Global Snapshot</h3>
+                                            <div class="sc-snapshot-controls">
+                                                <i data-lucide="maximize-2"></i>
+                                                <i data-lucide="sliders"></i>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="sc-snapshot-grid">
+                                            <div class="sc-snapshot-card">
+                                                <div class="snap-title">Sales <i data-lucide="chevron-down"></i></div>
+                                                <div class="snap-value">₹11,871.31</div>
+                                                <div class="snap-sub text-muted">Today so far</div>
+                                                <div class="snap-chart-container">
+                                                    <canvas id="sc-sales-mini-chart" width="100%" height="40"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="sc-snapshot-card">
+                                                <div class="snap-title">Open Orders <i data-lucide="chevron-down"></i></div>
+                                                <div class="snap-value text-warning">140</div>
+                                                <div class="snap-sub text-muted">Total Count</div>
+                                                <div class="snap-breakdown">
+                                                    <div class="break-row"><span>FBM Unshipped</span> <strong class="text-warning">139</strong></div>
+                                                    <div class="break-row"><span>FBM Pending</span> <strong>1</strong></div>
+                                                    <div class="break-row"><span>FBA Pending</span> <strong>0</strong></div>
+                                                </div>
+                                            </div>
+                                            <div class="sc-snapshot-card">
+                                                <div class="snap-title">Buyer Messages <i data-lucide="chevron-down"></i></div>
+                                                <div class="snap-value text-danger">4</div>
+                                                <div class="snap-sub text-danger">Cases requiring attention</div>
+                                                <div class="snap-breakdown">
+                                                    <div class="break-row"><span class="text-danger">Over 24h Limit</span> <strong class="text-danger">2</strong></div>
+                                                    <div class="break-row"><span>Under 24h</span> <strong>2</strong></div>
+                                                    <div class="break-row"><span>Response SLA</span> <span class="badge badge-danger">FAILED</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="sc-snapshot-card">
+                                                <div class="snap-title">Featured Offer % <i data-lucide="chevron-down"></i></div>
+                                                <div class="snap-value text-warning">71%</div>
+                                                <div class="snap-sub text-warning"><i data-lucide="trending-down"></i> -8% vs 2 days ago</div>
+                                                <p class="snap-note text-muted">Buy Box loss due to FBM shipping delay & ratings</p>
+                                            </div>
+                                            <div class="sc-snapshot-card">
+                                                <div class="snap-title">Seller Feedback <i data-lucide="chevron-down"></i></div>
+                                                <div class="snap-value text-warning">3.60 <span class="stars-icon">★</span></div>
+                                                <div class="snap-sub text-muted">Past Year (30 ratings)</div>
+                                                <div class="stars-row text-warning">★★★☆☆</div>
+                                                <p class="snap-note text-muted">Critical trust threshold. Target: >4.50</p>
+                                            </div>
+                                            <div class="sc-snapshot-card">
+                                                <div class="snap-title">Payments <i data-lucide="chevron-down"></i></div>
+                                                <div class="snap-value">₹2,07,502.58</div>
+                                                <div class="snap-sub text-muted">Total Balance</div>
+                                                <div class="break-row" style="margin-top: 15px;">
+                                                    <span>Global Promo Sales</span>
+                                                    <strong>₹46,669.06</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sub Tab B: SC Sales Performance Dashboard -->
+                            <div id="sc-sales" class="sc-sub-content">
+                                <div class="sc-filter-bar">
+                                    <div class="filter-group">
+                                        <label>Date Range</label>
+                                        <select id="sales-date-selector">
+                                            <option value="60day" selected>Custom (60-Day Audit Period)</option>
+                                            <option value="today">Today so far</option>
+                                            <option value="7day">Last 7 Days</option>
+                                            <option value="30day">Last 30 Days</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-group">
+                                        <label>Sales breakdown</label>
+                                        <select>
+                                            <option>Marketplace total</option>
+                                        </select>
+                                    </div>
+                                    <div class="filter-group">
+                                        <label>Fulfillment channel</label>
+                                        <select>
+                                            <option>Both (Amazon and seller)</option>
+                                            <option>Seller fulfilled (FBM)</option>
+                                            <option>Amazon fulfilled (FBA)</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn-sc-apply">Apply</button>
+                                </div>
+                                
+                                <div class="sc-sales-snapshot-box">
+                                    <div class="snap-metric">
+                                        <span>Total order items</span>
+                                        <h2 id="sc-sales-items">3,356</h2>
+                                    </div>
+                                    <div class="snap-metric">
+                                        <span>Units ordered</span>
+                                        <h2 id="sc-sales-units">3,432</h2>
+                                    </div>
+                                    <div class="snap-metric">
+                                        <span>Ordered product sales</span>
+                                        <h2 id="sc-sales-revenue" class="accent-text">₹16,38,077.50</h2>
+                                    </div>
+                                    <div class="snap-metric">
+                                        <span>Avg. units/order item</span>
+                                        <h2 id="sc-sales-avg-units">1.02</h2>
+                                    </div>
+                                    <div class="snap-metric">
+                                        <span>Avg. sales/order item</span>
+                                        <h2 id="sc-sales-avg-price">₹488.10</h2>
+                                    </div>
+                                </div>
+                                
+                                <div class="sc-chart-card">
+                                    <div class="chart-header">
+                                        <h3>Sales Trend & Order Volume</h3>
+                                        <div class="chart-legend">
+                                            <span class="legend-dot sales-dot"></span> Product Sales (INR)
+                                            <span class="legend-dot units-dot"></span> Units Ordered
+                                        </div>
+                                    </div>
+                                    <div class="chart-body">
+                                        <canvas id="sc-sales-main-chart" width="100%" height="280"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sub Tab C: SC Inventory Listing Audit -->
+                            <div id="sc-inventory" class="sc-sub-content">
+                                <div class="sc-inventory-header">
+                                    <h3>Catalog Inventory Listing Audit</h3>
+                                    <p class="text-muted">Total 17 active listings audited. 1 product selected for high-volume conversion rate optimization.</p>
+                                </div>
+                                
+                                <div class="inventory-table-container">
+                                    <table class="sc-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Product Details</th>
+                                                <th>Status</th>
+                                                <th>Sales (INR)</th>
+                                                <th>Units Sold</th>
+                                                <th>Page Views</th>
+                                                <th>Conversion Rate</th>
+                                                <th>Inventory</th>
+                                                <th>Price</th>
+                                                <th>Actions Required</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="highlight-row">
+                                                <td>
+                                                    <div class="product-cell">
+                                                        <div class="product-img-placeholder"><i data-lucide="backpack"></i></div>
+                                                        <div class="product-info">
+                                                            <strong>NORTH ZONE Casual Waterproof School/College Bag</strong>
+                                                            <span class="product-asin">ASIN: B0BS6QM2GD | SKU: 1081-bllk</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge badge-success">Active</span></td>
+                                                <td><strong>₹32,364</strong></td>
+                                                <td>98</td>
+                                                <td>5,326</td>
+                                                <td class="danger-text font-bold">1.84%</td>
+                                                <td>595 FBM</td>
+                                                <td>₹499.00</td>
+                                                <td>
+                                                    <span class="badge badge-warning">Low Conv. Rate (SEO Needed)</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="product-cell">
+                                                        <div class="product-img-placeholder"><i data-lucide="briefcase"></i></div>
+                                                        <div class="product-info">
+                                                            <strong>Premium Office Laptop Messenger Bag</strong>
+                                                            <span class="product-asin">ASIN: B0CS7QL3WD | SKU: 1082-brw</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge badge-success">Active</span></td>
+                                                <td><strong>₹28,150</strong></td>
+                                                <td>56</td>
+                                                <td>1,850</td>
+                                                <td>3.03%</td>
+                                                <td>120 FBM</td>
+                                                <td>₹499.00</td>
+                                                <td><span class="badge badge-success">Healthy</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="product-cell">
+                                                        <div class="product-img-placeholder"><i data-lucide="wallet"></i></div>
+                                                        <div class="product-info">
+                                                            <strong>Genuine Slim Leather Wallet for Men</strong>
+                                                            <span class="product-asin">ASIN: B0AS2QM4HD | SKU: 1083-blk</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge badge-success">Active</span></td>
+                                                <td><strong>₹18,200</strong></td>
+                                                <td>46</td>
+                                                <td>2,100</td>
+                                                <td class="danger-text">2.19%</td>
+                                                <td>430 FBM</td>
+                                                <td>₹395.00</td>
+                                                <td><span class="badge badge-warning">Optimise Bullet Points</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="product-cell">
+                                                        <div class="product-img-placeholder"><i data-lucide="luggage"></i></div>
+                                                        <div class="product-info">
+                                                            <strong>Durable Travel Duffel Bag - 45L Gym Pack</strong>
+                                                            <span class="product-asin">ASIN: B0DS9QL7ED | SKU: 1084-nvy</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge badge-success">Active</span></td>
+                                                <td><strong>₹12,400</strong></td>
+                                                <td>20</td>
+                                                <td>950</td>
+                                                <td>2.10%</td>
+                                                <td>75 FBM</td>
+                                                <td>₹620.00</td>
+                                                <td><span class="badge badge-success">Healthy</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="product-cell">
+                                                        <div class="product-img-placeholder"><i data-lucide="backpack"></i></div>
+                                                        <div class="product-info">
+                                                            <strong>Kids Lightweight Waterproof Schoolbag</strong>
+                                                            <span class="product-asin">ASIN: B0KS3QL8GD | SKU: 1085-pink</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><span class="badge badge-success">Active</span></td>
+                                                <td><strong>₹9,800</strong></td>
+                                                <td>22</td>
+                                                <td>1,200</td>
+                                                <td class="danger-text">1.83%</td>
+                                                <td>150 FBM</td>
+                                                <td>₹445.00</td>
+                                                <td><span class="badge badge-warning">Image Improvement</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="listing-optimization-card" style="margin-top: 20px;">
+                                    <div class="opt-card-header">
+                                        <h4>Listing Audit Detail: ASIN B0BS6QM2GD (NORTH ZONE Waterproof Bag)</h4>
+                                        <span class="badge badge-danger">Overall Score: 5.5 / 10</span>
+                                    </div>
+                                    <div class="opt-card-grid">
+                                        <div class="opt-checklist">
+                                            <h5>Listing Weaknesses Found:</h5>
+                                            <ul>
+                                                <li><i class="danger-text" data-lucide="x-circle"></i> Title lacks high search volume backend keywords (e.g. "School backpack", "College bag for boys").</li>
+                                                <li><i class="danger-text" data-lucide="x-circle"></i> Only 3 out of 7 images utilized; lacks lifestyle and infographic features.</li>
+                                                <li><i class="danger-text" data-lucide="x-circle"></i> Bullet points are plain and do not highlight key benefits (warranty, size capacity, waterproofing).</li>
+                                                <li><i class="danger-text" data-lucide="x-circle"></i> Missing structured A+ content or detailed HTML product descriptions.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="opt-action-plan">
+                                            <h5>SEO Action Plan (Week 5):</h5>
+                                            <ol>
+                                                <li>Run keyword extraction via AI tools (generate high-converting search volume terms).</li>
+                                                <li>Rewrite title with "Brand + Primary Keyword + Material + Size + Gender Accent" formula.</li>
+                                                <li>Design 5 high-converting infographics showing product dimensions, load testing, waterproof material.</li>
+                                                <li>Draft client outreach recommendation document for FBA enrollment.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sub Tab D: SC Ads / PPC Campaign -->
+                            <div id="sc-ads" class="sc-sub-content">
+                                <div class="sc-ads-snapshot-box">
+                                    <div class="snap-metric">
+                                        <span>Impressions</span>
+                                        <h2>2,156,869</h2>
+                                    </div>
+                                    <div class="snap-metric">
+                                        <span>Clicks</span>
+                                        <h2>23,539</h2>
+                                    </div>
+                                    <div class="snap-metric">
+                                        <span>Purchases</span>
+                                        <h2>576</h2>
+                                    </div>
+                                    <div class="snap-metric">
+                                        <span>Avg. CPC</span>
+                                        <h2>₹2.75</h2>
+                                    </div>
+                                    <div class="snap-metric">
+                                        <span>Ad Sales</span>
+                                        <h2 class="accent-text">₹2,20,894.74</h2>
+                                    </div>
+                                </div>
+                                
+                                <div class="ads-derived-metrics-grid">
+                                    <div class="derived-card">
+                                        <h4>Click-Through Rate (CTR)</h4>
+                                        <h3>1.09%</h3>
+                                        <p class="text-muted">Avg click-to-impression ratio. Target: >1.5%</p>
+                                        <div class="progress-bar-container"><div class="progress-bar warning" style="width: 72%;"></div></div>
+                                    </div>
+                                    <div class="derived-card">
+                                        <h4>Conversion Rate (CVR)</h4>
+                                        <h3>2.45%</h3>
+                                        <p class="text-muted">Avg purchase-to-click ratio. Target: >4%</p>
+                                        <div class="progress-bar-container"><div class="progress-bar danger" style="width: 61%;"></div></div>
+                                    </div>
+                                    <div class="derived-card">
+                                        <h4>Estimated Ad Spend</h4>
+                                        <h3>₹64,732.25</h3>
+                                        <p class="text-muted">Clicks &times; CPC. Total budget investment.</p>
+                                        <div class="progress-bar-container"><div class="progress-bar" style="width: 100%; background: #4a5568;"></div></div>
+                                    </div>
+                                    <div class="derived-card">
+                                        <h4>ACoS (Advertising Cost of Sales)</h4>
+                                        <h3 class="warning-text">29.3%</h3>
+                                        <p class="text-muted">Ad Spend / Ad Sales. Target target: &lt;25%</p>
+                                        <div class="progress-bar-container"><div class="progress-bar warning" style="width: 79%;"></div></div>
+                                    </div>
+                                    <div class="derived-card">
+                                        <h4>ROAS (Return on Ad Spend)</h4>
+                                        <h3 class="success-text">3.41x</h3>
+                                        <p class="text-muted">Ad Sales / Ad Spend. Revenue multiplier.</p>
+                                        <div class="progress-bar-container"><div class="progress-bar success" style="width: 85%;"></div></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="sc-chart-card" style="margin-top: 20px;">
+                                    <div class="chart-header">
+                                        <h3>PPC Campaign Clicks vs CVR Trend</h3>
+                                    </div>
+                                    <div class="chart-body">
+                                        <canvas id="sc-ppc-chart" width="100%" height="240"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sub Tab E: SC Marketplace Global Snapshot Comparison -->
+                            <div id="sc-global" class="sc-sub-content">
+                                <div class="sc-global-comparison-header">
+                                    <h3>Multi-Marketplace Benchmarking Audit</h3>
+                                    <p class="text-muted">Comparing Shaba Bags India account with their international (Saudi/Global Snapshot) account benchmark. Highlight gaps to scale the India account.</p>
+                                </div>
+                                
+                                <div class="global-benchmarking-grid">
+                                    <div class="benchmark-side">
+                                        <div class="side-header warning-bg">
+                                            <h4>India Account (Current Optimization Focus)</h4>
+                                            <span>High risk baseline</span>
+                                        </div>
+                                        <div class="side-body">
+                                            <div class="benchmark-row">
+                                                <span class="bench-label">Featured Offer (Buy Box)</span>
+                                                <span class="bench-val warning-text">71% (Poor)</span>
+                                            </div>
+                                            <div class="benchmark-row">
+                                                <span class="bench-label">Seller Feedback Rating</span>
+                                                <span class="bench-val warning-text">3.60 / 5 (Risky)</span>
+                                            </div>
+                                            <div class="benchmark-row">
+                                                <span class="bench-label">FBM Delivery Lag</span>
+                                                <span class="bench-val danger-text">139 orders backlog (Critical)</span>
+                                            </div>
+                                            <div class="benchmark-row">
+                                                <span class="bench-label">Customer Service response</span>
+                                                <span class="bench-val danger-text">2 pending >24 hours</span>
+                                            </div>
+                                            <div class="benchmark-row">
+                                                <span class="bench-label">Conversion Rate (CVR)</span>
+                                                <span class="bench-val warning-text">1.84% (ASIN B0BS6QM2GD)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="benchmark-side">
+                                        <div class="side-header success-bg">
+                                            <h4>Saudi Arabia / Global Account (Ideal Benchmark)</h4>
+                                            <span>SOP & scaling reference</span>
+                                        </div>
+                                        <div class="side-body">
+                                            <div class="benchmark-row">
+                                                <span class="bench-label">Featured Offer (Buy Box)</span>
+                                                <span class="bench-val success-text">99% (Excellent)</span>
+                                            </div>
+                                            <div class="benchmark-row">
+                                                <span class="bench-label">Seller Feedback Rating</span>
+                                                <span class="bench-val success-text">4.50 / 5 (Trustworthy)</span>
+                                            </div>
+                                            <div class="benchmark-row">
+                                                <span class="bench-label">FBM Delivery Lag</span>
+                                                <span class="bench-val success-text">0 backlog (100% on-time FBA)</span>
+                                            </div>
+                                            <div class="benchmark-row">
+                                                <span class="bench-label">Customer Service response</span>
+                                                <span class="bench-val success-text">0 over 24h SLA target</span>
+                                            </div>
+                                            <div class="benchmark-row">
+                                                <span class="bench-label">Conversion Rate (CVR)</span>
+                                                <span class="bench-val success-text">4.20% avg. catalog rate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="benchmark-conclusion-card">
+                                    <h5>Key Audit Recommendation:</h5>
+                                    <p>The Saudi account maintains a <strong>99% Featured Offer</strong> and a <strong>4.50/5 Seller Feedback</strong> rating primarily by routing 100% of orders via FBA (Fulfillment by Amazon), maintaining a fast customer support protocol, and utilizing optimized listing copy. The India account can achieve this benchmark in 60 days by transitioning from FBM (Seller Fulfilled) to FBA, enforcing a strict 24-hour response SLA, and executing the SEO Listing Overhaul planned for ASIN B0BS6QM2GD.</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. JIRA SPRINT BOARD VIEW -->
+                <section id="jira-section" class="tab-content">
+                    <div class="jira-wrapper">
+                        <div class="jira-header">
+                            <div class="jira-project-meta">
+                                <div class="jira-logo"><i data-lucide="trello"></i></div>
+                                <div>
+                                    <h3>Amazon Account Optimization</h3>
+                                    <p class="text-muted">Project Key: AMZ-OPT-60D | Agile Board</p>
+                                </div>
+                            </div>
+                            <div class="jira-controls">
+                                <label>Active Sprint:</label>
+                                <select id="jira-sprint-select">
+                                    <option value="1">Sprint 1 (Weeks 1-2): Baseline & Charter</option>
+                                    <option value="2" selected>Sprint 2 (Weeks 3-4): Account & Sales Audit</option>
+                                    <option value="3">Sprint 3 (Weeks 5-6): PPC & SEO Listing Launch</option>
+                                    <option value="4">Sprint 4 (Weeks 7-8): Scaling, Jira & SOP Transition</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- Jira Kanban Board Grid -->
+                        <div class="jira-kanban-board">
+                            <!-- Column 1: To Do -->
+                            <div class="kanban-column" id="jira-col-todo">
+                                <div class="column-header">
+                                    <h4>TO DO</h4>
+                                    <span class="column-badge" id="badge-todo">0</span>
+                                </div>
+                                <div class="column-cards-container" id="container-todo">
+                                    <!-- Dynamic cards loaded via app.js -->
+                                </div>
+                            </div>
+                            <!-- Column 2: In Progress -->
+                            <div class="kanban-column" id="jira-col-progress">
+                                <div class="column-header">
+                                    <h4>IN PROGRESS</h4>
+                                    <span class="column-badge" id="badge-progress">0</span>
+                                </div>
+                                <div class="column-cards-container" id="container-progress">
+                                    <!-- Dynamic cards -->
+                                </div>
+                            </div>
+                            <!-- Column 3: Under Review -->
+                            <div class="kanban-column" id="jira-col-review">
+                                <div class="column-header">
+                                    <h4>UNDER REVIEW</h4>
+                                    <span class="column-badge" id="badge-review">0</span>
+                                </div>
+                                <div class="column-cards-container" id="container-review">
+                                    <!-- Dynamic cards -->
+                                </div>
+                            </div>
+                            <!-- Column 4: Done -->
+                            <div class="kanban-column" id="jira-col-done">
+                                <div class="column-header">
+                                    <h4>DONE</h4>
+                                    <span class="column-badge" id="badge-done">0</span>
+                                </div>
+                                <div class="column-cards-container" id="container-done">
+                                    <!-- Dynamic cards -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. RISK REGISTER VIEW -->
+                <section id="risk-section" class="tab-content">
+                    <div class="risk-wrapper">
+                        <div class="risk-header-area">
+                            <div>
+                                <h3>Operational Risk Register (60-Day Audit Baseline)</h3>
+                                <p class="text-muted">A structured database mapping issues identified in the Shaba Bags Seller Central home dashboard to mitigation actions.</p>
+                            </div>
+                            <div class="risk-search-bar">
+                                <i data-lucide="search"></i>
+                                <input type="text" id="risk-search-input" placeholder="Search risks, evidence, actions...">
+                            </div>
+                        </div>
+                        
+                        <div class="risk-table-container">
+                            <table class="sc-table" id="risk-register-table">
+                                <thead>
+                                    <tr>
+                                        <th>Risk ID</th>
+                                        <th>Risk Name</th>
+                                        <th>Dashboard Evidence</th>
+                                        <th>Impact</th>
+                                        <th>Likelihood</th>
+                                        <th>Risk Score</th>
+                                        <th>Proposed Action / Plan</th>
+                                        <th>SLA / Deadline</th>
+                                        <th>Responsible Party</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="risk-table-body">
+                                    <!-- Loaded via app.js -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. AI SOP & OUTREACH VIEW -->
+                <section id="ai-sop-section" class="tab-content">
+                    <div class="ai-sop-wrapper">
+                        <div class="ai-sop-header">
+                            <h3>AI Toolkit & Standard Operating Procedures (SOPs)</h3>
+                            <p class="text-muted">Standard templates utilized for client acquisition, customer SLA response control, and automated catalog keyword optimization.</p>
+                        </div>
+                        
+                        <div class="ai-sop-grid">
+                            <!-- Left sidebar: select template -->
+                            <div class="ai-sop-nav">
+                                <button class="sop-nav-btn active" data-sop="outreach-email">Client Outreach - Cold Email Pitch</button>
+                                <button class="sop-nav-btn" data-sop="outreach-linkedin">Client Outreach - LinkedIn InMail</button>
+                                <button class="sop-nav-btn" data-sop="sop-fulfillment">SOP - Order Fulfillment & FBM Tracker</button>
+                                <button class="sop-nav-btn" data-sop="sop-customer">SOP - Customer Messages 24h SLA</button>
+                                <button class="sop-nav-btn" data-sop="seo-listing">SEO - Product Title Rewriting Prompt</button>
+                            </div>
+                            
+                            <!-- Right workspace: editor -->
+                            <div class="ai-sop-body">
+                                <div class="ai-sop-viewer-header">
+                                    <h4 id="sop-title">Client Outreach - Cold Email Pitch</h4>
+                                    <button class="btn btn-secondary btn-sm btn-icon" id="copy-sop-btn">
+                                        <i data-lucide="copy"></i> Copy Template
+                                    </button>
+                                </div>
+                                <div class="ai-sop-viewer-content">
+                                    <pre id="sop-content-area">Loading template...</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. HIRING & TEAM ORG VIEW -->
+                <section id="org-chart-section" class="tab-content">
+                    <div class="org-wrapper">
+                        <div class="org-header">
+                            <h3>Phase 3 Team Scaling & Operations Model</h3>
+                            <p class="text-muted">Visualizing the 60-day team scaling roadmap: delegating standard operations, freeing management bandwidth, and expanding store capacities.</p>
+                        </div>
+                        
+                        <div class="org-chart-container">
+                            <!-- Level 1: Project Manager -->
+                            <div class="org-level level-1">
+                                <div class="org-node leader-node">
+                                    <div class="node-icon"><i data-lucide="crown"></i></div>
+                                    <div class="node-info">
+                                        <h4>Saurabh Varma</h4>
+                                        <p>E-Commerce Project Manager</p>
+                                        <span class="node-badge font-bold">Strategy & Growth Owner</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="org-connector-v"></div>
+                            
+                            <!-- Level 2: Virtual Assistant & Specialists -->
+                            <div class="org-level level-2">
+                                <div class="org-node-grid">
+                                    <div class="org-node">
+                                        <div class="node-icon"><i data-lucide="settings"></i></div>
+                                        <div class="node-info">
+                                            <h4>Amazon VA (Fulfillment)</h4>
+                                            <p>Operations Specialist</p>
+                                            <span class="node-badge">FBM SLA & Logistics</span>
+                                            <p class="node-desc text-muted">Tracks FBM orders, shipping priority cues, return logs and shipping carrier coordination.</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-node">
+                                        <div class="node-icon"><i data-lucide="message-square"></i></div>
+                                        <div class="node-info">
+                                            <h4>Amazon VA (Support)</h4>
+                                            <p>Customer Experience Specialist</p>
+                                            <span class="node-badge">SLA & Feedback Manager</span>
+                                            <p class="node-desc text-muted">Guarantees &lt;24 hours customer response SLA, handles negative feedback extraction and disputes.</p>
+                                        </div>
+                                    </div>
+                                    <div class="org-node">
+                                        <div class="node-icon"><i data-lucide="trending-up"></i></div>
+                                        <div class="node-info">
+                                            <h4>Amazon Ads Specialist</h4>
+                                            <p>PPC Campaign Specialist</p>
+                                            <span class="node-badge">PPC Optimization Owner</span>
+                                            <p class="node-desc text-muted">Keywords bidding management, pruning low converting terms, bid testing and ACOS optimization.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="org-hiring-pipeline" style="margin-top: 30px;">
+                            <h4>Hiring Pipeline & SOP Delegation Schedule</h4>
+                            <div class="timeline-horizontal">
+                                <div class="timeline-item-h">
+                                    <div class="time-marker success-bg">Week 3-4</div>
+                                    <h5>Logistics VA Hiring</h5>
+                                    <p class="text-muted">Draft VA job description. Candidate shortlisting. SOP-001 (FBM logistics tracker) onboarding.</p>
+                                </div>
+                                <div class="timeline-item-h">
+                                    <div class="time-marker success-bg">Week 5-6</div>
+                                    <h5>Support VA Onboarding</h5>
+                                    <p class="text-muted">Draft messaging template script. Customer reply QA review. SLA compliance setup.</p>
+                                </div>
+                                <div class="timeline-item-h">
+                                    <div class="time-marker warning-bg">Week 7-8</div>
+                                    <h5>PPC Specialist retainer</h5>
+                                    <p class="text-muted">PPC keywords framework delivery. Bidding SOP transfer. Budget caps delegation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 7. EXCEL DATA CENTER VIEW -->
+                <section id="excel-section" class="tab-content">
+                    <div class="excel-wrapper">
+                        <div class="excel-header">
+                            <div>
+                                <h3>Excel Reporting & Business Analytics Center</h3>
+                                <p class="text-muted">Downloadable Excel trackers containing verified daily performance audits, client acquisitions, and risk matrices.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="excel-cards-grid">
+                            <div class="excel-asset-card">
+                                <div class="excel-card-icon"><i data-lucide="file-spreadsheet" class="success-text"></i></div>
+                                <h4>amazon_60day_sales_data.csv</h4>
+                                <p class="text-muted">Full sales database for the India store audit (Total ₹16.38L sales, units ordered, ad clicks, CPC spend, ACOS ratios, messages, rating progression).</p>
+                                <div class="excel-actions">
+                                    <button class="btn btn-secondary btn-sm" id="btn-preview-sales">Preview Data</button>
+                                    <button class="btn btn-primary btn-sm" id="btn-download-sales"><i data-lucide="download"></i> Download CSV</button>
+                                </div>
+                            </div>
+                            <div class="excel-asset-card">
+                                <div class="excel-card-icon"><i data-lucide="alert-circle" class="warning-text"></i></div>
+                                <h4>risk_register.csv</h4>
+                                <p class="text-muted">Structured project risk register detailing dashboard evidence logs, risk level matrices, and corresponding action deadlines.</p>
+                                <div class="excel-actions">
+                                    <button class="btn btn-secondary btn-sm" id="btn-preview-risk">Preview Data</button>
+                                    <button class="btn btn-primary btn-sm" id="btn-download-risk"><i data-lucide="download"></i> Download CSV</button>
+                                </div>
+                            </div>
+                            <div class="excel-asset-card">
+                                <div class="excel-card-icon"><i data-lucide="users" class="accent-text"></i></div>
+                                <h4>client_outreach_leads.csv</h4>
+                                <p class="text-muted">Sales pipeline spreadsheet containing 10 mock brands targeted, identified buy box/support pain points, proposal notes, and deal states.</p>
+                                <div class="excel-actions">
+                                    <button class="btn btn-secondary btn-sm" id="btn-preview-leads">Preview Data</button>
+                                    <button class="btn btn-primary btn-sm" id="btn-download-leads"><i data-lucide="download"></i> Download CSV</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- CSV Data Live Preview Box -->
+                        <div class="excel-preview-box" id="excel-preview-container" style="display: none;">
+                            <div class="preview-header">
+                                <h4 id="preview-filename">File Preview</h4>
+                                <button class="btn btn-secondary btn-sm" id="btn-close-preview">Close Preview</button>
+                            </div>
+                            <div class="preview-table-container">
+                                <table class="sc-table" id="preview-table">
+                                    <!-- Dynamic content -->
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+    
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

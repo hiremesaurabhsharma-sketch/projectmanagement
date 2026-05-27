@@ -1,0 +1,8 @@
+Risk_ID,Risk_Name,Evidence_From_Dashboard,Impact_Level,Likelihood_Level,Risk_Score,Mitigation_Action,SLA_Deadline,Owner
+R-001,Shipping Delay (FBM),139 FBM unshipped orders in dashboard backlog,High,High,9,Implement daily shipping tracker + priority packing list. Negotiate with secondary courier partner.,24 Hours,Operations Specialist (VA)
+R-002,Slow Customer Response,Buyer messages pending; 2 messages over 24 hours target,Medium,High,6,Create and enforce 24-hour response SLA. Build automated template library for FAQs.,Daily (12hr checks),Customer Support (VA)
+R-003,Increasing Returns,25 open return requests in dashboard,High,Medium,6,Analyze return reasons (quality size damage) and update product descriptions. Blacklist defective batches.,Weekly audit,Quality Analyst
+R-004,Negative Feedback Trend,Feedback rating low at 3.60/5 in India account,High,High,9,Proactive customer resolution. Follow up on returns to solve complaints. Request reviews safely.,48 Hours,Customer Support (VA)
+R-005,Featured Offer (Buy Box) Loss,Featured Offer % low at 71% in India (99% in SA),High,Medium,6,Optimize pricing dynamically. Maintain high inventory levels. Ensure 100% shipping compliance.,Real-time monitoring,Project Manager
+R-006,PPC / Ad Inefficiency,High impressions but low purchase rate (CTR 1.09% ACOS 29.3%),Medium,Medium,4,Prune low-converting keywords. Bid optimization. Shift budget to high-ROI product targeting.,Bi-weekly audit,PPC Specialist
+R-007,Listing Content Weakness,Enhancement opportunities flagged in inventory,Medium,High,6,Run keyword research. Rewrite product titles bullet points descriptions with high search volume keywords.,Weekly sprint,SEO Specialist
